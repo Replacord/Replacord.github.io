@@ -1,4 +1,4 @@
-import { $ } from "./mods/html.mjs"
+import { $ } from "/mods/html.mjs"
 
 
 
