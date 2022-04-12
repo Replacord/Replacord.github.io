@@ -191,7 +191,7 @@ themesettav2.setAttribute("class", "M")
 themesettav2.setAttribute("id", "themearea")
 themesettav2.innerHTML = `
 /* Don't Change This Unless You Don't Want Your Theme To Work */
-@import "/static/css/main.scss";
+@import "/css/main.scss";
 
 /* Link Color */
 a{
@@ -251,7 +251,7 @@ document.getElementById('LoadExistingThemeX').addEventListener('change', functio
     // when the reader is done, the content is in reader.result.
     console.log(reader.result);
     $.set("theme", "custom")
-    $.set("Ctheme", reader.result.replace("/static", "").replace("/css", "/static/css"))
+    $.set("Ctheme", reader.result.replace("/static/css", "/css"))
     location.reload()
   }
   reader.readAsText(this.files[0]);
@@ -273,7 +273,7 @@ document.getElementById('LoadExistingTheme').addEventListener('click', async ()=
   
     let cont = contents
       $.set("theme", "custom")
-      $.set("Ctheme", cont+"".replace("/static", "").replace("/css", "/static/css"))
+      $.set("Ctheme", cont+"".replace("/static", "").replace("/static/css", "/css"))
   
   console.log(cont)
   
