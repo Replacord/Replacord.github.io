@@ -15,7 +15,7 @@ function createFile(name, text, type) {
 
 
 // Create
-if (location.pathname == "/studio/c"){
+if (location.pathname == "/studio/c/"){
 document.getElementById("gpt").addEventListener("click", ()=>{
 
 let currentProjectType = document.getElementById("Ptype").value
@@ -27,7 +27,7 @@ if (currentProjectType == 'null' && currentProjectName != '') {
     alert("No Project Type & Name")
 } else if (currentProjectType != 'null' && currentProjectName == ''){
     if (currentProjectType == 'CreateTheme') {
-        window.location.href = "./c/themes"
+        window.location.href = "/studio/c/themes/"
     } else{
         alert("No Project Name")
     }
@@ -35,7 +35,7 @@ if (currentProjectType == 'null' && currentProjectName != '') {
 } else if (currentProjectType != 'null' && currentProjectName != ''){
 
 if (currentProjectType == "CreateTheme-RpTheme"){
-    window.location.href="./c/thememkr?pname="+currentProjectName
+    window.location.href="/studio/c/thememkr/?pname="+currentProjectName
 }
 
 }
@@ -64,7 +64,7 @@ if (currentProjectType == 'CreateTheme') {
 }
 
 // Theme Maker
-if (location.pathname == "/studio/c/thememkr"){
+if (location.pathname == "/studio/c/thememkr/"){
 
 
     document.getElementById("UseTheme").addEventListener("click", ()=>{
@@ -75,7 +75,7 @@ if (location.pathname == "/studio/c/thememkr"){
 
         let fin = `
         
-        @import "/static/css/main.scss";
+        @import "/css/main.scss";
         
         `+ncK.replaceAll("@Border", "border-style:groove; border-width: 3px;").replaceAll("%color", "color:").replaceAll("%under-line-color", "text-decoration-color:").replaceAll("#color", "background-color:").replaceAll("#ring-color", "border-color:").replaceAll("%", ";").replaceAll("-@!", "{").replaceAll("!@", "}")
 
