@@ -1,0 +1,44 @@
+@import "main.scss";
+
+a{
+    color: rgb(57, 57, 57);
+    text-decoration-color: gray;
+  }
+
+
+*{
+  color: rgb(0, 0, 0);
+}
+.navtitle{
+    color: rgb(0, 0, 0);
+}
+body{
+    background-color: #ffffff;
+}
+.navbar{
+    background-color: #ffffff;
+}
+.M-BTN{
+  border-style:groove;
+  border-width: 3px;
+    background-color: #ffffff;
+    border-color: rgb(214, 214, 214);
+  }
+  .M-BTN:hover{
+    background-color: #ffffff;
+    border-color: rgb(168, 168, 168);
+  }
+  .navbtns button {
+    border-style:groove;
+    border-width: 3px;
+    background-color: #ffffff;
+    border-color: rgb(214, 214, 214);
+}
+  .navbtns button:hover{
+    background-color: #ffffff;
+    border-color: rgb(168, 168, 168);
+  }
+  .themech{
+    border-color: black;
+    background-color: white;
+  }

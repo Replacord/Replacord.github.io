@@ -1,0 +1,42 @@
+@import "main.scss";
+
+.themech{
+  color: white;
+  border-color: white;
+  background-color: black;
+}
+
+.navtitle{
+    color: black;
+}
+body{
+    background-color: #A3CAFF;
+}
+.navbar{
+    background-color: #A1B2FF;
+}
+.M-BTN{
+  border-style: groove;
+  background-color: #859BFF;
+  border-color: #A1B2FF;
+  color: black;
+  }
+  .M-BTN:hover{
+    background-color: #AEBBF6;
+    border-color: #EBEEFF;
+  }
+  .navbtns button {
+    color: black;
+    background-color: #859BFF;
+}
+  .navbtns button:hover{
+    background-color: #859BFF;
+    border-color: rgb(255, 255, 255);
+  }
+  .M-INP{
+    color: black;
+    border-style: inset;
+    background-color: #859BFF;
+    border-color: #A1B2FF;
+    border-width: 0.5vw;
+  }

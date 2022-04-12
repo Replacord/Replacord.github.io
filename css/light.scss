@@ -1,0 +1,25 @@
+@import "main.scss";
+
+a{
+    color: rgb(57, 57, 57);
+    text-decoration-color: gray;
+  }
+
+body{
+    background-color: #f1f1f1;
+}
+.navbar{
+    background-color: #dadada;
+}
+.M-BTN{
+    background-color: #bbbaba;
+}
+  .M-BTN:hover{
+    background-color: #888888;
+}
+.navbtns button {
+    background-color: #ffffff;
+}
+.navbtns button:hover{
+    background-color: #c0c0c0;
+  }
