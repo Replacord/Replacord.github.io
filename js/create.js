@@ -1,3 +1,6 @@
+let searchParams = new URLSearchParams(window.location.search)
+let pname = searchParams.get('pname')
+
 //functions
 function createFile(name, text, type) {
   
@@ -66,6 +69,7 @@ if (currentProjectType == 'CreateTheme') {
 // Theme Maker
 if (location.pathname == "/studio/c/thememkr/"){
 
+  document.getElementById("pname").value = pname
 
     document.getElementById("UseTheme").addEventListener("click", ()=>{
 
