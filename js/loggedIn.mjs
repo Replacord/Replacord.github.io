@@ -1,6 +1,6 @@
 import { $ } from "/js/mods/html.mjs"
 
-let inyorn = $.get('uid')
+let inyorn = $.get('Vuid')
 
 if (inyorn !== null){
     
