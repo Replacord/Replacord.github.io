@@ -1,4 +1,4 @@
-import { $ } from "/mods/html.mjs"
+import { $ } from "/js/mods/html.mjs"
 
 let inyorn = $.get('uid')
 
