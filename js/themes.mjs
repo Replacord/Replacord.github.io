@@ -36,14 +36,14 @@ $.att(lnk, 'rel', 'stylesheet')
 if (theme == null){
 
     $.set('theme', 'main.scss')
-    $.att(lnk, 'href', `static/css/${theme}`)
+    $.att(lnk, 'href', `/css/${theme}`)
     document.body.append(lnk)
     location.reload()
 }
 
 if (theme !== '' || theme !== null || theme !== undefined || theme !== 'custom'){
 
-    $.att(lnk, 'href', `/static/css/${theme}`)
+    $.att(lnk, 'href', `/css/${theme}`)
     document.body.append(lnk)
 }
 
